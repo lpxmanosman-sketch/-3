@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إتمام الطلب | منون | MANON</title>
+    <meta name="description" content="إتمام الطلب - متجر منون للأزياء والعبايات الفاخرة">
+    
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="إتمام الطلب | منون | MANON">
+    <meta property="og:description" content="متجر منون للأزياء والعبايات الفاخرة">
+    <meta property="og:image" content="assets/images/logo.jpg">
+    <meta property="og:url" content="checkout.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+    <!-- Bootstrap 5 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom Luxury CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- 1. Top Announcement Bar -->
+    <div class="announcement-bar text-center">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-none d-md-block">
+                <i class="bi bi-whatsapp me-1 text-success"></i> خدمة العملاء: <a href="https://wa.me/201273572887" target="_blank">+20 12 73572887</a>
+            </div>
+            <div class="mx-auto fw-bold text-center">
+                <span>✨ شحن مجاني على كافة الطلبات هذا الأسبوع | تصميمات استثنائية لأناقة تدوم</span>
+            </div>
+            <div class="d-none d-md-block">
+                <a href="contact.html" class="text-light text-decoration-none small opacity-75 hover-opacity-100">
+                    <i class="bi bi-geo-alt me-1"></i> فروعنا
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-manon">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand logo-wrapper" href="index.html">
+                <img src="assets/images/logo.jpg" alt="MANON Logo" class="logo-img">
+            </a>
+
+            <!-- Mobile Cart & Toggler -->
+            <div class="d-flex align-items-center d-lg-none gap-2">
+                <a href="cart.html" class="nav-icon-btn">
+                    <i class="bi bi-bag"></i>
+                    <span class="cart-badge cart-count-val">0</span>
+                </a>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#manonNavbarNav">
+                    <i class="bi bi-list fs-2 text-dark"></i>
+                </button>
+            </div>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-center" id="manonNavbarNav">
+                <ul class="navbar-nav align-items-center gap-1 my-3 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-manon" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-manon" href="shop.html">متجر العبايات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-manon" href="categories.html">التصنيفات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-manon" href="about.html">عن منون</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-manon" href="contact.html">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Header Action Icons (Desktop) -->
+            <div class="d-none d-lg-flex align-items-center gap-2">
+                <!-- Search Button -->
+                <button class="nav-icon-btn" type="button" data-bs-toggle="modal" data-bs-target="#searchModal" title="بحث في المتجر">
+                    <i class="bi bi-search"></i>
+                </button>
+
+                <!-- WhatsApp Quick Chat -->
+                <a href="https://wa.me/201273572887?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%85%D8%AA%D8%AC%D8%B1%20%D9%85%D9%86%D9%88%D9%86%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%83%D9%88%D9%84%D9%83%D8%B4%D9%86%20%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D9%81%D8%A7%D8%AE%D8%B1%D8%A9" target="_blank" class="nav-icon-btn" title="تواصل واتساب">
+                    <i class="bi bi-whatsapp text-success"></i>
+                </a>
+
+                <!-- Cart Button -->
+                <a href="cart.html" class="nav-icon-btn" title="سلة المشتريات">
+                    <i class="bi bi-bag"></i>
+                    <span class="cart-badge cart-count-val">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg rounded-4 p-4" style="background: #FAF7F2;">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold">ابحثي في تشكيلة منون</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="shop.html" method="GET">
+                        <div class="input-group mb-3">
+                            <input type="text" name="q" class="form-control form-control-lg border-secondary-subtle" placeholder="اسم العباية، القصة، الخامة..." required autofocus>
+                            <button class="btn btn-dark px-4" type="submit"><i class="bi bi-search"></i> بحث</button>
+                        </div>
+                    </form>
+                    <div class="d-flex flex-wrap gap-2 align-items-center pt-2">
+                        <span class="small text-muted">الأكثر بحثاً:</span>
+                        <a href="shop.html?q=كلوش" class="badge bg-white text-dark border p-2 text-decoration-none">كلوش</a>
+                        <a href="shop.html?q=تطريز" class="badge bg-white text-dark border p-2 text-decoration-none">تطريز يدوي</a>
+                        <a href="shop.html?q=سهرة" class="badge bg-white text-dark border p-2 text-decoration-none">سهرة فاخرة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb & Header -->
+    <div class="py-4 bg-light border-bottom">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-1 small">
+                    <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                    <li class="breadcrumb-item"><a href="cart.html">السلة</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">إتمام الطلب</li>
+                </ol>
+            </nav>
+            <h1 class="h3 fw-bold text-dark mb-0">إتمام الطلب الملكي</h1>
+        </div>
+    </div>
+
+    <!-- Checkout Main Content -->
+    <div class="container py-5">
+        <form id="staticCheckoutForm">
+            <div class="row g-4">
+                <!-- Left: Customer Details & Payment -->
+                <div class="col-lg-7">
+                    <!-- 1. Customer Details -->
+                    <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm border border-secondary-subtle mb-4">
+                        <h5 class="fw-bold mb-4 pb-2 border-bottom">
+                            <i class="bi bi-person-lines-fill me-2 text-warning"></i> بياناتكِ للتوصيل
+                        </h5>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small text-dark">الاسم بالكامل <span class="text-danger">*</span></label>
+                            <input type="text" id="custName" class="form-control form-control-lg" placeholder="اسمكِ الكريم" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small text-dark">رقم الهاتف / واتساب <span class="text-danger">*</span></label>
+                            <input type="tel" id="custPhone" class="form-control form-control-lg" placeholder="رقم الهاتف للتواصل وتأكيد الشحن" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small text-dark">المحافظة <span class="text-danger">*</span></label>
+                            <select id="custCity" class="form-select form-select-lg" required>
+                                <option value="" disabled selected>اختاري المحافظة...</option>
+                                <option value="القاهرة">القاهرة</option>
+                                <option value="الجيزة">الجيزة</option>
+                                <option value="الإسكندرية">الإسكندرية</option>
+                                <option value="الشرقية">الشرقية</option>
+                                <option value="الدقهلية (المنصورة)">الدقهلية (المنصورة)</option>
+                                <option value="الغربية (طنطا)">الغربية (طنطا)</option>
+                                <option value="بورسعيد">بورسعيد</option>
+                                <option value="السويس">السويس</option>
+                                <option value="البحيرة">البحيرة</option>
+                                <option value="كفر الشيخ">كفر الشيخ</option>
+                                <option value="المنوفية">المنوفية</option>
+                                <option value="القليوبية">القليوبية</option>
+                                <option value="الفيوم">الفيوم</option>
+                                <option value="بني سويف">بني سويف</option>
+                                <option value="المنيا">المنيا</option>
+                                <option value="أسيوط">أسيوط</option>
+                                <option value="سوهاج">سوهاج</option>
+                                <option value="قنا">قنا</option>
+                                <option value="الأقصر">الأقصر</option>
+                                <option value="أسوان">أسوان</option>
+                                <option value="البحر الأحمر">البحر الأحمر</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small text-dark">العنوان بالتفصيل <span class="text-danger">*</span></label>
+                            <textarea id="custAddress" class="form-control" rows="3" placeholder="المنطقة، الشارع، رقم العقار أو المعلم القريب..." required></textarea>
+                        </div>
+
+                        <div class="mb-0">
+                            <label class="form-label small fw-bold text-dark">ملاحظات إضافية (اختياري)</label>
+                            <textarea id="custNotes" class="form-control" rows="2" placeholder="أي تفاصيل تخص المقاس أو ميعاد الاستلام..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- 2. Payment Method -->
+                    <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm border border-secondary-subtle">
+                        <h5 class="fw-bold mb-4 pb-2 border-bottom">
+                            <i class="bi bi-credit-card me-2 text-warning"></i> طريقة الدفع
+                        </h5>
+
+                        <div class="form-check payment-option-card p-3 rounded-3 border mb-3">
+                            <input class="form-check-input ms-2 me-0" type="radio" name="payment_method" id="payCod" value="الدفع عند الاستلام (COD)" checked>
+                            <label class="form-check-label w-100" for="payCod">
+                                <span class="fw-bold d-block text-dark">الدفع عند الاستلام (معاينة قبل الاستلام)</span>
+                                <span class="small text-muted">ادفعي نقداً لمندوب الشحن فور استلام العباية ومعاينتها والتأكد من المقاس.</span>
+                            </label>
+                        </div>
+
+                        <div class="form-check payment-option-card p-3 rounded-3 border">
+                            <input class="form-check-input ms-2 me-0" type="radio" name="payment_method" id="payInsta" value="تحويل إلكتروني / إنستاباي / فودافون كاش">
+                            <label class="form-check-label w-100" for="payInsta">
+                                <span class="fw-bold d-block text-dark">تحويل إلكتروني (InstaPay / فودافون كاش)</span>
+                                <span class="small text-muted">الدفع الإلكتروني متاح مباشرةً عبر واتساب بعد مراجعة الطلب.</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Order Summary -->
+                <div class="col-lg-5">
+                    <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm border border-secondary-subtle sticky-top" style="top: 100px;">
+                        <h5 class="fw-bold mb-4 pb-2 border-bottom">
+                            <i class="bi bi-bag-check me-2 text-warning"></i> ملخص طلبكِ
+                        </h5>
+
+                        <!-- Cart Items List Container -->
+                        <div id="checkoutItemsList" class="mb-4">
+                            <!-- Populated dynamically via JS or default sample -->
+                        </div>
+
+                        <!-- Price Calculations -->
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">المجموع الفرعي:</span>
+                                <span class="fw-bold" id="checkoutSubtotal">0 جنيه</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2 text-success">
+                                <span>مصاريف الشحن:</span>
+                                <span class="fw-bold">مجاني ✨</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3 text-warning-emphasis d-none" id="checkoutDiscountRow">
+                                <span>الخصم المطبق:</span>
+                                <span class="fw-bold" id="checkoutDiscountVal">- 0 جنيه</span>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 fw-bold border-top pt-3 text-dark">
+                                <span>الإجمالي النهائي:</span>
+                                <span class="text-primary-manon" id="checkoutTotal">0 جنيه</span>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp Submit Button -->
+                        <button type="submit" class="btn btn-whatsapp-order btn-lg w-100 py-3 shadow-sm mb-3">
+                            <i class="bi bi-whatsapp fs-5 me-2"></i> تأكيد الطلب عبر واتساب
+                        </button>
+
+                        <div class="text-center">
+                            <span class="small text-muted">
+                                <i class="bi bi-shield-check text-success me-1"></i> ضمان الجودة والاستبدال المريح
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- 4. Footer -->
+    <footer class="footer-manon pt-5 pb-4 bg-dark text-white border-top border-secondary">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 text-center text-md-end">
+                    <img src="assets/images/logo.jpg" alt="MANON Logo" class="footer-logo mb-3" style="max-height: 70px; border-radius: 8px;">
+                    <p class="text-light-50 small leading-relaxed">
+                        مانون | علامة تجارية رائدة ومبتكرة في عالم تصميم العبايات الشرقية الفاخرة، نصنع التفرد بأجود الخامات والأقمشة لتعكس هيبتكِ وجمالكِ.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold text-uppercase tracking-wider mb-3 text-warning">روابط سريعة</h6>
+                    <ul class="list-unstyled small d-flex flex-column gap-2 opacity-75">
+                        <li><a href="index.html" class="text-white text-decoration-none">الرئيسية</a></li>
+                        <li><a href="shop.html" class="text-white text-decoration-none">متجر العبايات</a></li>
+                        <li><a href="categories.html" class="text-white text-decoration-none">كولكشن العبايات</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">عن مانون</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold text-uppercase tracking-wider mb-3 text-warning">خدمة العملاء والطلب</h6>
+                    <ul class="list-unstyled small d-flex flex-column gap-2 opacity-75">
+                        <li><i class="bi bi-whatsapp me-2 text-success"></i> واتساب: <a href="https://wa.me/201273572887" target="_blank" class="text-white text-decoration-none">+20 12 73572887</a></li>
+                        <li><i class="bi bi-clock me-2"></i> مواعيد العمل: يومياً من 10 ص حتى 11 م</li>
+                        <li><i class="bi bi-truck me-2"></i> توصيل سريع لجميع محافظات مصر</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold text-uppercase tracking-wider mb-3 text-warning">طرق الدفع والضمان</h6>
+                    <p class="small opacity-75 mb-2">الدفع عند الاستلام مع إمكانية المعاينة والتجربة، أو عبر إنستاباي والمحافظ الإلكترونية.</p>
+                    <div class="d-flex gap-2 fs-4 text-warning">
+                        <i class="bi bi-cash-coin" title="الدفع عند الاستلام"></i>
+                        <i class="bi bi-shield-check" title="ضمان الجودة"></i>
+                        <i class="bi bi-box-seam" title="تغليف فاخر"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-3 text-center small opacity-50">
+                جميع الحقوق محفوظة &copy; 2026 متجر منون | MANON
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

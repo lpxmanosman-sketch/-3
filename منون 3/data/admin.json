@@ -1,0 +1,7 @@
+{
+    "email": "admin@manon.com",
+    "password_hash": "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "name": "MANON Admin",
+    "role": "admin",
+    "note": "Default password: admin123456 — CHANGE THIS after first login by editing this file with a new hash"
+}

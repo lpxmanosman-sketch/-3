@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر العبايات الفاخرة | تشكيلة منون الحصرية | MANON | مانون</title>
+    <meta name="description" content="متجر منون للأزياء والعبايات الفاخرة - تصاميم استثنائية تعكس أناقتك الملكية بأجود الأقمشة.">
+    
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="متجر العبايات الفاخرة | تشكيلة منون الحصرية | MANON | مانون">
+    <meta property="og:description" content="متجر منون للأزياء والعبايات الفاخرة">
+    <meta property="og:image" content="assets/images/logo.jpg">
+    <meta property="og:url" content="index.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+    <!-- Bootstrap 5 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom Luxury CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- 1. Top Announcement Bar -->
+    <div class="announcement-bar text-center">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-none d-md-block">
+                <i class="bi bi-whatsapp me-1 text-success"></i> خدمة العملاء: <a href="https://wa.me/201273572887" target="_blank">+20 12 73572887</a>
+            </div>
+            <div class="mx-auto fw-bold text-center">
+                <span>✨ شحن مجاني على كافة الطلبات هذا الأسبوع | تصميمات استثنائية لأناقة تدوم</span>
+            </div>
+            <div class="d-none d-md-block">
+                <a href="contact.html" class="text-light text-decoration-none small opacity-75 hover-opacity-100">
+                    <i class="bi bi-shield-lock me-1"></i> لوحة الإدارة
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-manon">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand logo-wrapper" href="index.html">
+                <img src="assets/images/logo.jpg" alt="MANON Logo" class="logo-img">
+            </a>
+
+            <!-- Mobile Cart & Toggler -->
+            <div class="d-flex align-items-center d-lg-none gap-2">
+                <a href="cart.html" class="nav-icon-btn">
+                    <i class="bi bi-bag"></i>
+                    <span class="cart-badge cart-count-val">0</span>
+                </a>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#manonNavbarNav">
+                    <i class="bi bi-list fs-2 text-dark"></i>
+                </button>
+            </div>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-center" id="manonNavbarNav">
+                <ul class="navbar-nav align-items-center gap-1 my-3 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-manon " href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-manon active" href="shop.html">متجر العبايات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-manon " href="categories.html">التصنيفات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-manon" href="shop.html">كولكشن جديد</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-manon " href="about.html">عن منون</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-manon " href="contact.html">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Header Action Icons (Desktop) -->
+            <div class="d-none d-lg-flex align-items-center gap-2">
+                <!-- Search Button -->
+                <button class="nav-icon-btn" type="button" data-bs-toggle="modal" data-bs-target="#searchModal" title="بحث في المتجر">
+                    <i class="bi bi-search"></i>
+                </button>
+
+                <!-- WhatsApp Quick Chat -->
+                <a href="https://wa.me/201273572887?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%85%D8%AA%D8%AC%D8%B1%20%D9%85%D9%86%D9%88%D9%86%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%83%D9%88%D9%84%D9%83%D8%B4%D9%86%20%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D9%81%D8%A7%D8%AE%D8%B1%D8%A9" target="_blank" class="nav-icon-btn" title="تواصل واتساب">
+                    <i class="bi bi-whatsapp text-success"></i>
+                </a>
+
+                <!-- Cart Button -->
+                <a href="cart.html" class="nav-icon-btn" title="سلة المشتريات">
+                    <i class="bi bi-bag"></i>
+                    <span class="cart-badge cart-count-val">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg rounded-4 p-4" style="background: #FAF7F2;">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold">ابحثي في تشكيلة منون</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="shop.html" method="GET">
+                        <div class="input-group mb-3">
+                            <input type="text" name="q" class="form-control form-control-lg border-secondary-subtle" placeholder="اسم العباية، القصة، الخامة..." required autofocus>
+                            <button class="btn btn-dark px-4" type="submit"><i class="bi bi-search"></i> بحث</button>
+                        </div>
+                    </form>
+                    <div class="d-flex flex-wrap gap-2 align-items-center pt-2">
+                        <span class="small text-muted">الأكثر بحثاً:</span>
+                        <a href="shop.html?q=كلوش" class="badge bg-white text-dark border p-2 text-decoration-none">كلوش</a>
+                        <a href="shop.html?q=تطريز" class="badge bg-white text-dark border p-2 text-decoration-none">تطريز يدوي</a>
+                        <a href="shop.html?q=سهرة" class="badge bg-white text-dark border p-2 text-decoration-none">سهرة فاخرة</a>
+                        <a href="shop.html?q=بليزر" class="badge bg-white text-dark border p-2 text-decoration-none">بليزر عملي</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="py-4" style="background: #F4EFEB; border-bottom: 1px solid var(--color-border);">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-1 small">
+                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                <li class="breadcrumb-item"><a href="shop.html">المتجر</a></li>
+                <li class="breadcrumb-item active" aria-current="page">جميع العبايات</li>
+            </ol>
+        </nav>
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+            <div>
+                <h1 class="h2 fw-bold text-dark mb-1">جميع العبايات</h1>
+                <p class="text-muted small mb-0">تم العثور على 6 عباية فاخرة</p>
+            </div>
+                    </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row g-4">
+        <!-- Sidebar Filters -->
+        <div class="col-lg-3">
+            <div class="bg-white p-4 rounded-4 shadow-sm border border-secondary-subtle">
+                <h5 class="fw-bold mb-3 pb-2 border-bottom"><i class="bi bi-funnel me-2 text-warning"></i> تصنيفات العبايات</h5>
+                <ul class="list-unstyled mb-4">
+                    <li class="mb-2">
+                        <a href="shop.html" class="d-flex justify-content-between align-items-center text-decoration-none fw-bold text-dark">
+                            <span>الكل</span>
+                            <i class="bi bi-chevron-left small"></i>
+                        </a>
+                    </li>
+                                            <li class="mb-2">
+                            <a href="shop.php?category=black-abayas" class="d-flex justify-content-between align-items-center text-decoration-none text-muted">
+                                <span>عبايات سوداء</span>
+                                <i class="bi bi-chevron-left small"></i>
+                            </a>
+                        </li>
+                                            <li class="mb-2">
+                            <a href="shop.php?category=luxury-abayas" class="d-flex justify-content-between align-items-center text-decoration-none text-muted">
+                                <span>عبايات فاخرة</span>
+                                <i class="bi bi-chevron-left small"></i>
+                            </a>
+                        </li>
+                                            <li class="mb-2">
+                            <a href="shop.php?category=casual-abayas" class="d-flex justify-content-between align-items-center text-decoration-none text-muted">
+                                <span>عبايات عملية</span>
+                                <i class="bi bi-chevron-left small"></i>
+                            </a>
+                        </li>
+                                            <li class="mb-2">
+                            <a href="shop.php?category=occasion-abayas" class="d-flex justify-content-between align-items-center text-decoration-none text-muted">
+                                <span>عبايات مناسبات</span>
+                                <i class="bi bi-chevron-left small"></i>
+                            </a>
+                        </li>
+                                            <li class="mb-2">
+                            <a href="shop.php?category=new-abayas" class="d-flex justify-content-between align-items-center text-decoration-none text-muted">
+                                <span>عبايات جديدة</span>
+                                <i class="bi bi-chevron-left small"></i>
+                            </a>
+                        </li>
+                                    </ul>
+
+                <h5 class="fw-bold mb-3 pb-2 border-bottom"><i class="bi bi-tags me-2 text-warning"></i> مجموعات خاصة</h5>
+                <ul class="list-unstyled mb-4">
+                    <li class="mb-2">
+                        <a href="shop.html" class="d-flex justify-content-between align-items-center text-decoration-none text-muted">
+                            <span>وصل حديثاً</span>
+                            <span class="badge bg-danger rounded-pill">جديد</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="shop.html" class="d-flex justify-content-between align-items-center text-decoration-none text-muted">
+                            <span>الأكثر طلباً</span>
+                            <span class="badge bg-warning text-dark rounded-pill">مميز</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mb-3 pb-2 border-bottom"><i class="bi bi-cash-stack me-2 text-warning"></i> نطاق السعر</h5>
+                <form action="shop.php" method="GET">
+                                                            <div class="row g-2 mb-3">
+                        <div class="col-6">
+                            <label class="small text-muted mb-1">من (ج.م)</label>
+                            <input type="number" name="min_price" class="form-control form-control-sm" value="0" min="0" step="50">
+                        </div>
+                        <div class="col-6">
+                            <label class="small text-muted mb-1">إلى (ج.م)</label>
+                            <input type="number" name="max_price" class="form-control form-control-sm" value="5000" min="0" step="50">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-sm w-100">تطبيق التصفية</button>
+                </form>
+            </div>
+
+            <!-- WhatsApp Help Banner in Sidebar -->
+            <div class="mt-4 p-4 rounded-4 text-center text-white" style="background: linear-gradient(135deg, #1C1917 0%, #2A2623 100%);">
+                <i class="bi bi-whatsapp fs-1 text-success mb-2 d-inline-block"></i>
+                <h6 class="fw-bold">محتارة في اختيار المقاس؟</h6>
+                <p class="small opacity-75 mb-3">فريق مصممات منون جاهز لمساعدتك عبر الواتساب فوراً</p>
+                <a href="https://wa.me/201273572887?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%85%D9%86%D9%88%D9%86%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A9%20%D9%81%D9%8A%20%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B3%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B3%D8%A8%20%D9%84%D9%84%D8%B9%D8%A8%D8%A7%D9%8A%D8%A9" target="_blank" class="btn btn-sm btn-whatsapp-order w-100">
+                    تحدثي معنا
+                </a>
+            </div>
+        </div>
+
+        <!-- Products Grid Area -->
+        <div class="col-lg-9">
+            <!-- Top Controls Bar -->
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center bg-white p-3 rounded-4 shadow-sm border border-secondary-subtle mb-4 gap-3">
+                <div class="text-muted small">
+                    عرض <strong>6</strong> من أصل <strong>6</strong> عباية
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <label class="text-nowrap small text-muted">ترتيب حسب:</label>
+                    <select class="form-select form-select-sm" onchange="location = this.value;" style="min-width: 170px;">
+                                                <option value="shop.php?sort=latest" selected>الأحدث أولاً</option>
+                        <option value="shop.php?sort=price_asc" >السعر: من الأقل للأعلى</option>
+                        <option value="shop.php?sort=price_desc" >السعر: من الأعلى للأقل</option>
+                        <option value="shop.php?sort=popular" >الأكثر شعبية</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Cards Grid -->
+                            <div class="row g-4">
+                                            <div class="col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-6.html">
+                                        <img src="assets/images/abaya6.jpg" alt="عباية ليل القمر" loading="lazy">
+                                    </a>
+                                                                            <span class="product-badge sale">خصم</span>
+                                                                    </div>
+                                <div class="product-content">
+                                    <span class="product-category">عبايات مناسبات</span>
+                                    <h3 class="product-title">
+                                        <a href="product-6.html">عباية ليل القمر</a>
+                                    </h3>
+                                    <div class="product-price-box">
+                                                                                    <span class="product-price text-danger">850 ج.م</span>
+                                            <span class="product-old-price">1,100 ج.م</span>
+                                                                            </div>
+                                    <div class="product-card-actions">
+                                        <button type="button" class="btn-add-cart btn-add-cart-ajax" data-id="6">
+                                            <i class="bi bi-bag-plus"></i> أضف للسلة
+                                        </button>
+                                        <a href="product-6.html" class="btn-view-details" title="تفاصيل العباية">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-5.html">
+                                        <img src="assets/images/abaya5.jpg" alt="عباية موضة جديدة" loading="lazy">
+                                    </a>
+                                                                            <span class="product-badge new">جديد</span>
+                                                                    </div>
+                                <div class="product-content">
+                                    <span class="product-category">عبايات جديدة</span>
+                                    <h3 class="product-title">
+                                        <a href="product-5.html">عباية موضة جديدة</a>
+                                    </h3>
+                                    <div class="product-price-box">
+                                                                                    <span class="product-price">950 ج.م</span>
+                                                                            </div>
+                                    <div class="product-card-actions">
+                                        <button type="button" class="btn-add-cart btn-add-cart-ajax" data-id="5">
+                                            <i class="bi bi-bag-plus"></i> أضف للسلة
+                                        </button>
+                                        <a href="product-5.html" class="btn-view-details" title="تفاصيل العباية">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-4.html">
+                                        <img src="assets/images/abaya4.jpg" alt="عباية سهرة فاخرة" loading="lazy">
+                                    </a>
+                                                                    </div>
+                                <div class="product-content">
+                                    <span class="product-category">عبايات مناسبات</span>
+                                    <h3 class="product-title">
+                                        <a href="product-4.html">عباية سهرة فاخرة</a>
+                                    </h3>
+                                    <div class="product-price-box">
+                                                                                    <span class="product-price">1,500 ج.م</span>
+                                                                            </div>
+                                    <div class="product-card-actions">
+                                        <button type="button" class="btn-add-cart btn-add-cart-ajax" data-id="4">
+                                            <i class="bi bi-bag-plus"></i> أضف للسلة
+                                        </button>
+                                        <a href="product-4.html" class="btn-view-details" title="تفاصيل العباية">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-3.html">
+                                        <img src="assets/images/abaya3.jpg" alt="عباية بيج عصرية" loading="lazy">
+                                    </a>
+                                                                            <span class="product-badge new">جديد</span>
+                                                                    </div>
+                                <div class="product-content">
+                                    <span class="product-category">عبايات عملية</span>
+                                    <h3 class="product-title">
+                                        <a href="product-3.html">عباية بيج عصرية</a>
+                                    </h3>
+                                    <div class="product-price-box">
+                                                                                    <span class="product-price">750 ج.م</span>
+                                                                            </div>
+                                    <div class="product-card-actions">
+                                        <button type="button" class="btn-add-cart btn-add-cart-ajax" data-id="3">
+                                            <i class="bi bi-bag-plus"></i> أضف للسلة
+                                        </button>
+                                        <a href="product-3.html" class="btn-view-details" title="تفاصيل العباية">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-2.html">
+                                        <img src="assets/images/abaya2.jpg" alt="عباية فاخرة بتفاصيل ذهبية" loading="lazy">
+                                    </a>
+                                                                            <span class="product-badge sale">خصم</span>
+                                                                    </div>
+                                <div class="product-content">
+                                    <span class="product-category">عبايات فاخرة</span>
+                                    <h3 class="product-title">
+                                        <a href="product-2.html">عباية فاخرة بتفاصيل ذهبية</a>
+                                    </h3>
+                                    <div class="product-price-box">
+                                                                                    <span class="product-price text-danger">980 ج.م</span>
+                                            <span class="product-old-price">1,200 ج.م</span>
+                                                                            </div>
+                                    <div class="product-card-actions">
+                                        <button type="button" class="btn-add-cart btn-add-cart-ajax" data-id="2">
+                                            <i class="bi bi-bag-plus"></i> أضف للسلة
+                                        </button>
+                                        <a href="product-2.html" class="btn-view-details" title="تفاصيل العباية">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-1.html">
+                                        <img src="assets/images/abaya1.jpg" alt="عباية كلاسيك سوداء" loading="lazy">
+                                    </a>
+                                                                    </div>
+                                <div class="product-content">
+                                    <span class="product-category">عبايات سوداء</span>
+                                    <h3 class="product-title">
+                                        <a href="product-1.html">عباية كلاسيك سوداء</a>
+                                    </h3>
+                                    <div class="product-price-box">
+                                                                                    <span class="product-price">850 ج.م</span>
+                                                                            </div>
+                                    <div class="product-card-actions">
+                                        <button type="button" class="btn-add-cart btn-add-cart-ajax" data-id="1">
+                                            <i class="bi bi-bag-plus"></i> أضف للسلة
+                                        </button>
+                                        <a href="product-1.html" class="btn-view-details" title="تفاصيل العباية">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/201273572887?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20MANON%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D9%81%D8%A7%D8%AE%D8%B1%D8%A9" class="floating-whatsapp" target="_blank" title="محادثة فورية عبر واتساب">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Mobile Bottom Navigation Bar -->
+    <div class="mobile-bottom-nav">
+        <a href="index.html" class="mobile-nav-item ">
+            <i class="bi bi-house"></i>
+            <span>الرئيسية</span>
+        </a>
+        <a href="shop.html" class="mobile-nav-item active">
+            <i class="bi bi-grid"></i>
+            <span>المتجر</span>
+        </a>
+        <a href="categories.html" class="mobile-nav-item ">
+            <i class="bi bi-collection"></i>
+            <span>التصنيفات</span>
+        </a>
+        <a href="cart.html" class="mobile-nav-item ">
+            <i class="bi bi-bag"></i>
+            <span class="cart-badge cart-count-val" style="top:-2px; right: 50%; margin-right: -15px;">0</span>
+            <span>السلة</span>
+        </a>
+        <a href="https://wa.me/201273572887" target="_blank" class="mobile-nav-item text-success">
+            <i class="bi bi-whatsapp"></i>
+            <span>واتساب</span>
+        </a>
+    </div>
+
+    <!-- Main Luxury Footer -->
+    <footer class="footer-manon">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                <!-- Col 1: Brand & Logo -->
+                <div class="col-lg-4 col-md-6">
+                    <img src="assets/images/logo.jpg" alt="MANON" class="footer-logo rounded-2 p-1 bg-white">
+                    <p class="footer-desc mt-2">
+                        <strong>MANON | منون</strong> - بيت الأزياء الرائد المتخصص في تصميم العبايات الخليجية الراقية والحديثة، حيث تلتقي فخامة التفاصيل بأجود الأقمشة لتمنحك إطلالة ملكية ساحرة في كل إطلالة.
+                    </p>
+                    <div class="d-flex align-items-center mt-3">
+                        <a href="https://instagram.com" target="_blank" class="footer-social-link" title="إنستغرام"><i class="bi bi-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="footer-social-link" title="فيسبوك"><i class="bi bi-facebook"></i></a>
+                        <a href="https://tiktok.com" target="_blank" class="footer-social-link" title="تيك توك"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://wa.me/201273572887" target="_blank" class="footer-social-link" title="واتساب"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="footer-heading">روابط سريعة</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-left text-muted small"></i> الرئيسية</a></li>
+                        <li><a href="shop.html"><i class="bi bi-chevron-left text-muted small"></i> جميع العبايات</a></li>
+                        <li><a href="categories.html"><i class="bi bi-chevron-left text-muted small"></i> تشكيلة التصنيفات</a></li>
+                        <li><a href="shop.html"><i class="bi bi-chevron-left text-muted small"></i> الأكثر طلباً</a></li>
+                        <li><a href="about.html"><i class="bi bi-chevron-left text-muted small"></i> قصة منون</a></li>
+                        <li><a href="contact.html"><i class="bi bi-chevron-left text-muted small"></i> تواصل معنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Customer Care -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="footer-heading">خدمة العملاء</h5>
+                    <ul class="footer-links">
+                        <li><a href="contact.html"><i class="bi bi-chevron-left text-muted small"></i> جدول المقاسات</a></li>
+                        <li><a href="contact.html"><i class="bi bi-chevron-left text-muted small"></i> الشحن والتوصيل</a></li>
+                        <li><a href="contact.html"><i class="bi bi-chevron-left text-muted small"></i> الاستبدال والاسترجاع</a></li>
+                        <li><a href="contact.html"><i class="bi bi-chevron-left text-muted small"></i> الأسئلة الشائعة</a></li>
+                        <li><a href="contact.html"><i class="bi bi-lock text-muted small"></i> دخول المشرف</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact & Order via WhatsApp -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">الطلب والاستفسار</h5>
+                    <p class="text-light opacity-75 small mb-3">نسعد باستقبال طلباتك واستفساراتك على مدار الساعة عبر الواتساب المباشر:</p>
+                    <div class="mb-3">
+                        <a href="https://wa.me/201273572887" target="_blank" class="btn btn-whatsapp-order w-100 text-center">
+                            <i class="bi bi-whatsapp fs-5"></i> اطلبي الآن عبر واتساب
+                        </a>
+                    </div>
+                    <div class="small text-muted mb-2">
+                        <i class="bi bi-telephone me-2 text-warning"></i> +20 12 73572887                    </div>
+                    <div class="small text-muted mb-2">
+                        <i class="bi bi-geo-alt me-2 text-warning"></i> القاهرة - مصر                    </div>
+                    <div class="small text-muted">
+                        <i class="bi bi-envelope me-2 text-warning"></i> contact@manon-abaya.com                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <div>
+                    جميع الحقوق محفوظة &copy; 2026 لعلامة <strong>MANON | منون</strong> للأزياء والعبايات.
+                </div>
+                <div class="text-muted small">
+                    تصميم فاخر • عبايتك فخامة تليق بك
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Storefront Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
